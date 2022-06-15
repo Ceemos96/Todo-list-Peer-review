@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(242, 242, 242);
+}
+
+#todo-container {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  background: white;
+  box-shadow: 0 0 15px #6f6c6c;
+  margin-top: 13rem;
+}
+
+#todo-title {
+  font-size: 24px;
+  margin: 0;
+  padding: 0.4rem;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 0.7rem;
+  position: relative;
+}
+
+#todo-list {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#todo-list li:nth-child(1) {
+  border-top: none;
+}
+
+.task {
+  display: flex;
+  padding: 0.5rem;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.task-description {
+  margin-top: 0.5rem;
+  width: 70%;
+  text-align: left;
+}
+
+.task-checkbox {
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: 0.7rem;
+  width: 17px;
+  height: 17px;
+}
+
+.buttons {
+  margin-left: auto;
+}
+
+.delete-btn,
+.move-btn {
+  border: none;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  background: white;
+  font-size: 19px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#clear-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #eaecc8;
+}
+
+.hide {
+  display: none;
+}
